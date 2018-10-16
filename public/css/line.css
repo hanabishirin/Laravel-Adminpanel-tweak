@@ -1,0 +1,141 @@
+/*#lineBox{
+	width: 1332px;
+	height: 180px;
+	position: relative;
+	margin: 50px auto;
+	background: url("../images/line.png") no-repeat 0 68px;
+	background-size:contain;
+	overflow: hidden;
+	padding-top: 68px
+}*/
+.headbox{
+	height: 200px;
+	overflow: hidden;
+}
+.box{
+	/*width: 80%;*/
+	height: 4px;
+	margin: 100px auto;
+	background: #f0625e;
+	border-radius: 50%;
+	/*min-width: 1332px;*/
+}
+ #box div{
+	position: absolute;
+	width: 40px;
+	text-align: center;
+	transition: top 1.6s,left 1.5s;
+	top: -45px;
+}
+ #box div:after {
+	content: '';
+	width: 20px;
+	height: 20px;
+	background: #fe0000;
+	border-radius: 50%;
+	display: block;
+	margin: 0 auto;
+}
+#box .acbis:after{
+	content: '';
+	width: 16px;
+	height: 16px;
+	background: #fff;
+	border-radius: 50%;
+	display: block;
+	margin: 0 auto;
+	border: 4px solid #f0625e;
+} 
+#box .item{
+	top: -56px;
+}
+.cont p{
+	text-align: center;
+	font-weight: 600;
+	color: #f0625e;
+}
+#box{
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	/*overflow: hidden;*/
+}
+ #box div.active:after{
+	border: 4px solid #f98a69;
+	background: #fff;
+	width: 28px;
+	height: 28px;
+}
+#box div.ac:after{
+	border: 2px solid #f98a69;
+	background: #fff;
+	width: 26px;
+	height: 26px;
+}
+ #box div p{
+	color: #bcbcbc;
+}
+#tabs{
+	width: 300px;
+	margin: 0 auto 80px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 100px;
+	position: relative;
+
+}
+#tabs div{
+	background: url('../images/icons.png') no-repeat;
+	width: 76px;
+	height: 84px;
+	background-size: cover;
+	position: absolute;
+	animation:move 2s infinite;
+	padding-top: 16px;
+}
+.tab-l{
+	color: #ccc;
+	font-weight: bold;
+	background: url('../images/left1.png') no-repeat;
+	background-size: contain;
+	width: 20px;
+	height: 20px;
+}
+.tab-r{
+	color: #ccc;
+	font-weight: bold;
+	font-size: 30px;
+	background: url('../images/right1.png') no-repeat;
+	width: 20px;
+	height: 20px;
+	background-size: contain;
+}
+.tab-color{
+	color:#f0625e;
+	transition: width 1s,height 1s;
+	cursor: pointer;
+}
+.tab-color:hover{
+	width: 30px;
+	height: 30px;
+}
+.acdd{
+	background: url('../images/right.png') no-repeat;
+	width: 20px;
+	height: 20px;
+	background-size: contain;
+}
+.clear{
+	background: url('../images/left.png') no-repeat;
+	width: 20px;
+	height: 20px;
+	background-size: contain;
+}
+
+@keyframes move {
+	0% {top: 0px;}
+
+	50% {top:-30px;}
+	100%{top:0;}
+}
